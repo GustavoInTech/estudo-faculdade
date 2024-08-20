@@ -6,4 +6,4 @@ Modelo:
     produto: id, nome, quantidade, valor, observacao
 
 Repositorio de usuario
-    
+    obterTodos, obterPorId, adicionar, atualizar, deletar.
