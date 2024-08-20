@@ -8,5 +8,5 @@ Modelo: OK
 Repositorio de usuario: OK
     obterTodos, obterPorId, adicionar, atualizar, deletar.
 
-Serviço de produto: 
+Serviço de produto: OK
     obterTodos, obterPorId, adicionar, atualizar, deletar.
