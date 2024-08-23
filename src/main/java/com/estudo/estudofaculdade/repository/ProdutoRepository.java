@@ -1,12 +1,12 @@
 package com.estudo.estudofaculdade.repository;
 
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Repository;
 import com.estudo.estudofaculdade.model.Produto;
+import com.estudo.estudofaculdade.model.exception.ResourceNotFoundException;
 
 @Repository
 public class ProdutoRepository {
@@ -73,7 +73,7 @@ public class ProdutoRepository {
         Optional<Produto> produtoEncontrado = obterPorId(produto.getId());
 
         if (produtoEncontrado.isEmpty()) {
-            throw new InputMismatchException("Prosuto não encontrado");
+            throw new ResourceNotFoundException("Produto não pode ser atualizado pois não existe.");
         }
 
         // Eu tenho que remover o produto antigo da lista.
